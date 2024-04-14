@@ -16,11 +16,12 @@ const projects  = [
 ]
 const Work = () => {
   return (
-    <div className="max-w-[1200px] mx-auto grid grid-cols-2 gap-4 glass p-6" >
+    <div className="max-w-[1200px] mx-auto grid grid-cols-1  gap-4 glass p-6" >
       <div className=" col-span-2 my-4">
         <h1 className=" text-4xl mb-4  text-gray-300 ">My work</h1>
       </div>
-      {
+      
+      {/* {
         projects.map((project)=>(
           <div key={project.id} className=" glass transform transition-transform overflow-hidden hover:scale-105 duration-300 shadow-lg group h-[300px] relative ">
             <img src={project.img} alt=""  className=" w-full h-full object-cover" />
@@ -34,7 +35,8 @@ const Work = () => {
             </div>
           </div>
         ))
-      }
+      } */}
+      
     </div>
   )
 }

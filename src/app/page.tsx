@@ -4,12 +4,17 @@ import Work from "./components/Work";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import { CardStack } from "./components/ui/card-stack";
+import { CardStackDemo } from "./components/CardStackDemo";
+
+
 
 export default function Home() {
   return (
     <>
      <Hero/>
-     <Work/>
+     {/* <Work/> */}
+     <CardStackDemo/>
      <Skills/>
      <About/>
      <Contact/>

@@ -16,7 +16,7 @@ const Hero = () => {
             sequence={[
               "Frontend Dev.",
               1000,
-              "Web Developer",
+              "Student",
               1000
             ]}
             wrapper="span"
@@ -25,7 +25,7 @@ const Hero = () => {
             />
         </h1>
         <p className="  my-6 font-bold  sm:text-lg lg:text-xl max-w-[200px] md:max-w-[600px] ml-1 text-gray-300">
-            My name is Kartik and I am a frontend Developer
+            My name is Kartik and I am a Frontend Developer.
         </p>
       </div>
 

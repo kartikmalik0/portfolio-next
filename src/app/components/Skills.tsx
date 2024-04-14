@@ -1,12 +1,14 @@
 
 const Skills = () => {
   return (
-    <div id="skills" className="max-w-[1200px] mx-auto mt-12 grid grid-cols-2 gap-4 glass p-6" >
-      <div className=" col-span-2 my-4">
+    <div id="skills" className=" scroll max-w-[1200px] mx-auto mt-8  gap-4 glass p-6" >
+      <div className="  my-4">
         <h1 className=" text-4xl mb-4  text-gray-300 ">Skills</h1>
       </div>
 
-      <div>
+      
+
+      {/* <div>
         <h3 className="text-2xl mb-4  text-gray-300 ">React</h3>
         <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
           <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: "65%" }}></div>
@@ -59,7 +61,7 @@ const Skills = () => {
         <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
           <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: "90%" }}></div>
         </div>
-      </div>
+      </div> */}
 
 
 
