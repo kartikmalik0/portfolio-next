@@ -11,8 +11,8 @@ const Navbar = () => {
       <h1 className=" text-xl font-bold">Kartik Malik</h1>
       <ul className=" hidden md:flex gap-6 text-xl">
           <li ><Link to="home" spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
-          <li ><Link to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link></li>
-          <li ><Link to="porfolio" spy={true} smooth={true} offset={50} duration={500}>Porfolio</Link></li>
+          <li ><Link to="work" spy={true} smooth={true} offset={50} duration={500}>Work</Link></li>
+          <li ><Link to="skills" spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
           <li ><Link to="contact" spy={true} smooth={true} offset={50} duration={500}>Conact</Link></li>
       </ul>
 

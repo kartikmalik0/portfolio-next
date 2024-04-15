@@ -21,21 +21,7 @@ const Work = () => {
         <h1 className=" text-4xl mb-4  text-gray-300 ">My work</h1>
       </div>
       
-      {/* {
-        projects.map((project)=>(
-          <div key={project.id} className=" glass transform transition-transform overflow-hidden hover:scale-105 duration-300 shadow-lg group h-[300px] relative ">
-            <img src={project.img} alt=""  className=" w-full h-full object-cover" />
-            <div className=" rounded-sm group-hover:opacity-90 opacity-0 bg-[#232323] absolute transition-opacity  duration-300 inset-0 flex flex-col justify-center items-center ">
-              <span className=" text-2xl font-bold text-white mb-4 ">{project.title}</span>
-              <div>
-                <a className=" bg-white px-5 py-2 rounded-xl font-bold" href={project.liveUrl}>
-                  Live
-                </a>
-              </div>
-            </div>
-          </div>
-        ))
-      } */}
+      
       
     </div>
   )
