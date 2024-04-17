@@ -10,6 +10,7 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors }
   } = useForm()
 
@@ -17,6 +18,7 @@ const Contact = () => {
     setIsLoading(true);
     try {
       await axios.post('/api/email', data);
+      reset()
       toast.success('Email sent successfully');
     } catch (error) {
       console.error('Error sending email:', error);
