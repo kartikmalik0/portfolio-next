@@ -33,13 +33,14 @@ export const PinContainer = ({
   return (
     <div
       className={cn(
-        "relative group/pin z-50  cursor-pointer",
+        "relative group/pin z-50  cursor-pointer mx-auto",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
       <div
+      
         style={{
           perspective: "1000px",
           transform: "rotateX(70deg) translateZ(0deg)",

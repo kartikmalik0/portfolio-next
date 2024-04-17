@@ -34,16 +34,14 @@ const Contact = () => {
       </div>
 
       <div className=" flex justify-center">
-        <div className=" my-auto text-purple-900 ">
-          <a href="" className=" w-[100px] h-auto mb-4">
+        <div className=" my-auto text-purple-900 flex flex-col ">
+          <a href="https://www.linkedin.com/in/kartik-malik-3543b2251" className=" w-[100px] h-auto mb-8 flex justify-center items-center">
             <AiFillLinkedin className=" text-5xl" />
           </a>
-          <a href="" className=" w-[100px] h-auto mb-4">
+          <a href="https://github.com/kartikmalik0" className=" w-[100px] h-auto mb-4 flex justify-center items-center">
             <AiFillGithub className=" text-5xl"  />
           </a>
-          <a href="" className=" w-[100px] h-auto mb-4">
-            <AiFillInstagram className=" text-5xl" />
-          </a>
+          
         </div>
         <div className=" p-6 max-w-6xl ">
           <h2 className=" mb-4 text-2xl font-bold text-gray-400">Ready to get Started ?</h2>

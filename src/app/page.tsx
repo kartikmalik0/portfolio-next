@@ -5,7 +5,7 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import { CardStack } from "./components/ui/card-stack";
-import { CardStackDemo } from "./components/CardStackDemo";
+import { ProjectCardStack } from "./components/ProjectCardStack";
 
 
 
@@ -14,7 +14,7 @@ export default function Home() {
     <>
      <Hero/>
      {/* <Work/> */}
-     <CardStackDemo/>
+     <ProjectCardStack/>
      <Skills/>
      <About/>
      <Contact/>

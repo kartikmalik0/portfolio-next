@@ -1,5 +1,4 @@
-// import notebook from "/notebookM.png"
-// import mobile from "/mobileR.png"
+
 const About = () => {
   return (
     <div className=" text-white gap-4 max-w-[1200px] mx-auto my-12 grid sm:grid-cols-3 ">

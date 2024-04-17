@@ -4,7 +4,7 @@
 import {TypeAnimation} from "react-type-animation"
 const Hero = () => {
   return (
-    <div id="hero" className=" -z-10 relative grid overflow-hidden grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8">
+    <div id="hero" className=" -z-10 mt-24 relative grid overflow-hidden grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8">
       <img className=" absolute z-[-1] hidden md:block lg:block w-[400px] bottom-0 left-[-170px]" src={"/notebookL.png"} alt=""  />
       <img className=" absolute z-[-1] w-[400px] bottom-0 left-[320px]" src={"/notebookM.png"} alt="" />
       <img className=" absolute z-[-1] w-[200px] bottom-[450px] left-[450px]" src={"/mobileR.png"} alt="" />
@@ -15,6 +15,8 @@ const Hero = () => {
             <TypeAnimation
             sequence={[
               "Frontend Dev.",
+              1000,
+              "Freelancer",
               1000,
               "Student",
               1000
