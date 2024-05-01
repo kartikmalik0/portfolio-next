@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import { ToastContainer } from "react-toastify";
 import QueryProvider from "./providers/QueryProvider";
 import 'react-toastify/dist/ReactToastify.css';
+import { ChakraProviderClient } from "./providers/ChakraProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,14 +23,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <QueryProvider>
-        <Navbar/>
-        {children}
-        <ToastContainer/>
-        <Footer/>
-        </QueryProvider>
-        
-        </body>
+        <ChakraProviderClient>
+          <QueryProvider>
+            <Navbar />
+            {children}
+            <ToastContainer />
+            <Footer />
+          </QueryProvider>
+        </ChakraProviderClient>
+
+      </body>
     </html>
   );
 }

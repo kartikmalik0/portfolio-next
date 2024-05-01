@@ -7,18 +7,18 @@ const CARDS = [
   {
     id: 0,
     name: "Manu Arora",
-    img:"/projD1.jpg"
+    img: "/projD1.jpg"
   },
   {
     id: 1,
     name: "Elon Musk",
-    img:"/projM1.jpg"
+    img: "/projM1.jpg"
 
   },
   {
     id: 2,
     name: "Tyler Durden",
-        img:"/projD1.jpg"
+    img: "/projD1.jpg"
 
   },
 ];
@@ -27,18 +27,18 @@ const CARDS2 = [
   {
     id: 0,
     name: "Manu Arora",
-    img:"/projects/ms1.jpg"
+    img: "/projects/ms1.jpg"
   },
   {
     id: 1,
     name: "Elon Musk",
-    img:"/projects/ms2.jpg"
+    img: "/projects/ms2.jpg"
 
   },
   {
     id: 2,
     name: "Tyler Durden",
-    img:"/projects/ms3.jpg"
+    img: "/projects/ms3.jpg"
   },
 ];
 
@@ -46,55 +46,52 @@ const CARDS3 = [
   {
     id: 0,
     name: "Manu Arora",
-    img:"/projects/ad1.jpg"
+    img: "/projects/ad1.jpg"
   },
   {
     id: 1,
     name: "Elon Musk",
-    img:"/projects/ad2.jpg"
+    img: "/projects/ad2.jpg"
 
   },
   {
     id: 2,
     name: "Tyler Durden",
-    img:"/projects/ad3.jpg"
+    img: "/projects/ad3.jpg"
 
   },
 ];
 export function ProjectCardStack() {
   return (
-    <div className=" max-w-[1200px] mx-auto flex flex-col gap-4 glass p-6">
-      <div className="">
-        <h1 className=" text-4xl mb-4  text-gray-300 ">My work</h1>
+    <div id="work" className=" max-w-[1200px] mx-auto flex flex-col gap-4 glass p-6">
+      <h1 className=" text-4xl mb-4  text-gray-300 ">My work</h1>
+      <div className="flex flex-wrap">
+
+
+        <PinContainer
+          title="Vistit My Profile"
+          href="/"
+          containerClassName="md:w-[50%] "
+        >
+          <CardStack items={CARDS} />
+        </PinContainer>
+
+        <PinContainer
+          title="Visit MsBurgers"
+          href="https://msburgers.netlify.app"
+          containerClassName="md:w-[50%] "
+        >
+          <CardStack items={CARDS2} />
+        </PinContainer>
+
+        <PinContainer
+          title="Advanced Filter Component"
+          href="/"
+          containerClassName="md:w-[50%]"
+        >
+          <CardStack items={CARDS3} />
+        </PinContainer>
       </div>
-       <div className="flex flex-wrap">
-       
-
-        <PinContainer
-        title="Vistit My Profile"
-        href="/card"    
-        containerClassName="md:w-[50%] "        
-     
-        >
-      <CardStack items={CARDS} />
-        </PinContainer>
-
-        <PinContainer
-        title="Visit MsBurgers"
-        href="https://msburgers.netlify.app"      
-        containerClassName="md:w-[50%] "        
-        >
-      <CardStack items={CARDS2} />
-        </PinContainer>
-
-        <PinContainer
-        title="Advanced Filter Component"
-        href="/card"     
-        containerClassName="md:w-[50%]"
-        >
-      <CardStack items={CARDS3} />
-        </PinContainer>
-       </div>
     </div>
   );
 }
