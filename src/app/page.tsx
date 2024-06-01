@@ -6,6 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import { CardStack } from "./components/ui/card-stack";
 import { ProjectCardStack } from "./components/ProjectCardStack";
+import Testimonial from "./components/Testimonial";
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
      {/* <Work/> */}
      <ProjectCardStack/>
      <Skills/>
+     <Testimonial/>
      <About/>
      <Contact/>
     </>
