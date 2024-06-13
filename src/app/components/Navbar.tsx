@@ -18,17 +18,15 @@ import {
   DrawerCloseButton,
   useDisclosure,
 } from "@chakra-ui/react";
-import { on } from "events";
+
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const handleNav = () => setNav(!nav);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleDownload = () => {
     const pdfUrl = `/kartik2024.pdf`; // Construct the path to the PDF
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "kartik_2024" + ".pdf"; // Set the download filename
+    link.download = "kartik_2024.pdf"; // Set the download filename
     link.click();
   };
 
@@ -50,7 +48,7 @@ const Navbar = () => {
             to="home"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-70}
             duration={500}
           >
             Home
@@ -61,7 +59,7 @@ const Navbar = () => {
             to="work"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-70}
             duration={500}
           >
             Work
@@ -72,7 +70,7 @@ const Navbar = () => {
             to="skills"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-128}
             duration={500}
           >
             Skills
@@ -80,10 +78,21 @@ const Navbar = () => {
         </li>
         <li className=" cursor-pointer">
           <Link
+            to="testimonial"
+            spy={true}
+            smooth={true}
+            offset={-110}
+            duration={500}
+          >
+            Testimonial
+          </Link>
+        </li>
+        <li className=" cursor-pointer">
+          <Link
             to="contact"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-70}
             duration={500}
           >
             Contact
@@ -94,9 +103,9 @@ const Navbar = () => {
             to=""
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-70}
             duration={500}
-            onClick={() => handleDownload()}
+            onClick={handleDownload}
           >
             Download Resume
           </Link>
@@ -113,55 +122,55 @@ const Navbar = () => {
             Kartik Malik{" "}
             <AiOutlineClose
               size={30}
-              onClick={() => onClose()}
+              onClick={onClose}
               className=" cursor-pointer"
             />
           </DrawerHeader>
           <DrawerBody className=" bg-[#232323] flex flex-col ">
             <Link
               className="py-3 cursor-pointer px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2d2c2c] text-gray-300 hover:bg-[#333232] mb-3"
-              to="/"
+              to="home"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-70}
               duration={500}
-              onClick={() => onClose()}
+              onClick={onClose}
             >
               <FaHome className=" text-xl" />
               Home
             </Link>
 
             <Link
-              onClick={() => onClose()}
+              onClick={onClose}
               className="py-3 px-4 cursor-pointer inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2d2c2c] text-gray-300 hover:bg-[#333232] mb-3"
               to="work"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-70}
               duration={500}
             >
               <MdOutlineWorkspacePremium className=" text-xl" />
               Work
             </Link>
             <Link
-              onClick={() => onClose()}
+              onClick={onClose}
               className="py-3 px-4 cursor-pointer inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2d2c2c] text-gray-300 hover:bg-[#333232] mb-3"
               to="skills"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-70}
               duration={500}
             >
               <SiMinds className=" text-xl" />
               Skills
             </Link>
             <Link
-              onClick={() => onClose()}
+              onClick={onClose}
               className="py-3 px-4 cursor-pointer inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2d2c2c] text-gray-300 hover:bg-[#333232] mb-3"
               to="contact"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-70}
               duration={500}
             >
               <IoIosContact className=" text-xl" />
@@ -169,10 +178,10 @@ const Navbar = () => {
             </Link>
             <Link
               className=" p-3 cursor-pointer px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2d2c2c] text-gray-300 hover:bg-[#333232] mb-3"
-              to="/"
+              to=""
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-70}
               duration={500}
               onClick={() => {
                 handleDownload();
@@ -191,61 +200,6 @@ const Navbar = () => {
         className="block cursor-pointer md:hidden text-gray-300 fixed right-10 top-10 z-50"
       >
         <AiOutlineMenu size={30} />
-      </div>
-
-      <div
-        className={
-          nav
-            ? " text-gray-300 z-40 fixed left-0 top-0 w-full  bg-[#232323] ease-in-out duration-500 "
-            : " fixed left-[-100%]"
-        }
-      >
-        <ul className=" p-8 text-4xl ml-20 z-10">
-          <li className=" p-2">
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Home
-            </Link>
-          </li>
-          <li className=" p-2">
-            <Link
-              to="work"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Work
-            </Link>
-          </li>
-          <li className=" p-2">
-            <Link
-              to="skills"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Skills
-            </Link>
-          </li>
-          <li className=" p-2">
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
       </div>
     </div>
   );
