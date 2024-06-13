@@ -70,7 +70,7 @@ const Navbar = () => {
             to="skills"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-128}
             duration={500}
           >
             Skills

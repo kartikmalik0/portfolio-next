@@ -76,8 +76,8 @@ const Testimonial = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="text-red-500"/>
-          <CarouselNext className="text-red-500"/>
+          <CarouselPrevious className="text-white"/>
+          <CarouselNext className="text-white"/>
         </Carousel>
       </div>
     </div>

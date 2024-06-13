@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="max-w-[1200px]  mx-auto p-8">
+    <div id="contact" className="max-w-[1200px] glass mx-auto p-8">
       <div className="text-center mb-8">
         <h2 className="text-white text-3xl md:text-5xl mb-4 font-bold">
           {"Let's Connect"}
@@ -41,11 +41,11 @@ const Contact = () => {
       </div>
 
       <div className="flex flex-col  items-center">
-        <div className="bg-glass border glass backdrop-blur-xs p-8 rounded-xl shadow-lg max-w-[600px] w-full">
+        <div className="bg-glass border border-glassBorder backdrop-blur-xs p-8 rounded-xl shadow-lg max-w-[600px] w-full">
           <h2 className="text-center text-white text-3xl mb-6">
             Ready to get Started?
           </h2>
-          <form  onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <div>
               <input
                 type="text"
@@ -55,7 +55,7 @@ const Contact = () => {
                 {...register("name", { required: "Name is required" })}
               />
               {errors.name && (
-                <span className="text-red-500">{errors.name.message}</span>
+                <span className="text-red-500"> Please enter a valid name</span>
               )}
             </div>
             <div>
@@ -73,7 +73,7 @@ const Contact = () => {
                 })}
               />
               {errors.email && (
-                <span className="text-red-500">{errors.email.message}</span>
+                <span className="text-red-500"> Please enter a valid email address</span>
               )}
             </div>
             <div>
@@ -86,16 +86,16 @@ const Contact = () => {
                 {...register("message", { required: "Message is required" })}
               />
               {errors.message && (
-                <span className="text-red-500">{errors.message.message}</span>
+                <span className="text-red-500"> Please enter a message</span>
               )}
             </div>
             <div className="text-center">
             </div>
-          </form>
-          <div className="text-center mt-8">
+            <div className="text-center mt-8">
               <button
-                className="rounded-lg bg-blue-700 px-6 py-2 text-white hover:bg-red-500"
+                className="rounded-lg bg-[#7e22ce] w-full px-6 py-2 text-white hover:bg-[#a854f1]"
                 type="submit"
+
               >
                 {isLoading ? (
                   <span className="flex items-center justify-center">
@@ -125,24 +125,26 @@ const Contact = () => {
                   "Send Message"
                 )}
               </button>
-          <div className="mt-8 flex justify-center space-x-6">
-            <a
-              href="https://www.linkedin.com/in/kartik-malik-3543b2251"
-              aria-label="LinkedIn"
-              className="text-5xl text-blue-700 hover:transition ease-in-out delay-150  hover:-translate-y-1 duration-300 "
-            >
-              <AiFillLinkedin />
-            </a>
-            <a 
-              href="https://github.com/kartikmalik0"
-              aria-label="GitHub"
-              className="text-5xl text-blue-800 hover:transition ease-in-out delay-150  hover:-translate-y-1 duration-300 "
-            >
-              <AiFillGithub />
-            </a>
-          </div>
-           
-          </div>
+              <div className="mt-8 flex justify-center space-x-6">
+                <a
+                  href="https://www.linkedin.com/in/kartik-malik-3543b2251"
+                  aria-label="LinkedIn"
+                  className="text-5xl text-[#7e22ce] hover:transition ease-in-out delay-150  hover:-translate-y-1 duration-300 "
+                >
+                  <AiFillLinkedin />
+                </a>
+                <a
+                  href="https://github.com/kartikmalik0"
+                  aria-label="GitHub"
+                  className="text-5xl text-[#7e22ce] hover:transition ease-in-out delay-150  hover:-translate-y-1 duration-300 "
+                >
+                  <AiFillGithub />
+                </a>
+              </div>
+
+            </div>
+          </form>
+
         </div>
       </div>
     </div>
