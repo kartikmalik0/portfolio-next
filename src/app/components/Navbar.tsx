@@ -81,7 +81,7 @@ const Navbar = () => {
             to="testimonial"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-110}
             duration={500}
           >
             Testimonial

@@ -41,7 +41,7 @@ const Contact = () => {
       </div>
 
       <div className="flex flex-col  items-center">
-        <div className="bg-glass border border-glassBorder backdrop-blur-xs p-8 rounded-xl shadow-lg max-w-[600px] w-full">
+        <div className="bg-glass border glass backdrop-blur-xs p-8 rounded-xl shadow-lg max-w-[600px] w-full">
           <h2 className="text-center text-white text-3xl mb-6">
             Ready to get Started?
           </h2>
